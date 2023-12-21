@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(./Picture/tumblr_9e458b84aa9ac5c855d7a9474de98be7_74c5c5fe_500.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.img {
+  display: flex;
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #27374d;
+  z-index: 9999;
+}
+ul {
+  padding: 0;
+}
+
+.nabar ul {
+  list-style: none;
+  background: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  padding: 0px 20px 0px 0px;
+  left: 20px;
+  top: 5px;
+}
+
+
+
+#rex {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  padding: 10px 0px 30px 0px;
+  z-index: 99;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #dde6ed;
+  width: 40px;
+  display: flex;
+  position: relative;
+  top: -6px;
+  display: block;
+  padding: 10px 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; 
+  justify-content: center;
+}
+
+.navbar a:hover {
+  color: #526d82;
+}
+
+.container {
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(60px);
+  margin: 0 auto;
+  width: 50%;
+  border: 0.1em solid #333;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.container h1 {
+  text-align: center;
+  border-bottom: 5px solid #333;
+  border-bottom-style: double;
+}
+
+@keyframes typinganimation {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+#Myprofile img {
+  position: relative;
+  width: 150px;
+  left: 25px;
+  border-radius: 100%;
+  padding: 0px 0px 0px 0px;
+  box-shadow: 0 0 30px #222;
+	transition: all 2s;
+}
+
+#Myprofile img:hover{
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: none;
+}
+
+#Myprofile p {
+  font-size: medium;
+  position: relative;
+  text-align: left;
+  padding: 10px 5px 10px 75px;
+}
+
+#Myprofile,
+#Activity {
+  border-bottom: 2px solid orange;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  scroll-padding-top: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: white;
+  margin-block: 0.3em;
+  border-radius: 15px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: linear-gradient(#333, #777);
+  border-radius: 15px;
+}
+.activity-content {
+  padding: 10px;
+}
+.activity-content img,
+.deskripsi-content p {
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide {
+  background: url(./Picture/PIC5.jpg);
+  width: 500px;
+  height: 300px;
+  margin: 25px auto;
+  animation: slide 20s infinite;
+  border-radius: 5px;
+}
+
+@keyframes slide {
+  25% {
+    background: url(./Picture/PIC5.jpg);
+    }
+  50% {
+    background: url(./Picture/PIC4.jpg);
+  }
+  75% {
+    background: url(./Picture/PIC3.jpg);
+  }
+  100% {
+    background: url(./Picture/PIC2.jpg);
+  }
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmedia a {
+  margin: 5px 10px;
+  padding: 10px;
+  font-size: 20px;
+  width: 25px;
+  text-align: center;
+
+  background-color: white;
+  border-radius: 50%;
+  background-size: 20px 20px;
+}
+
+footer {
+  display: flex;
+  padding: 100px;
+  margin-top: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  border-radius: 10px;
+}
